@@ -4,14 +4,14 @@
 
 h1{
     font-size: 4.5rem; //72
-    letter-spacing: -3;
+    letter-spacing: -3px;
     line-height: 5rem; //80
     font-family: 'Black Ops One';
     color: white;
 }
 h2{
     font-size: 3.5rem; //56
-    letter-spacing: -2;
+    letter-spacing: -2px;
     line-height: 4rem; //80
     font-family: 'Black Ops One';
     color:#4D5163;
@@ -20,6 +20,7 @@ h2{
 h3{
     font-size: 2.5rem; //40
     font-family: 'Black Ops One';
+    color:#4D5163;
 }
 h4{
     font-size: 1.5rem; //24
@@ -32,6 +33,12 @@ h5{
     line-height: 2rem; //32
     font-family: 'Robot';
     color:white;
+}
+h6{
+    font-size: 0.875rem; //14
+    line-height: 1.5rem; //24
+    font-family: 'Robot';
+    color:rgba(77,81,99,0.5);
 }
 p{
     font-size: 1rem; //16
