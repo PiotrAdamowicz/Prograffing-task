@@ -1,7 +1,7 @@
 import React from "react";
 
-import TruckImage from "./utils/TruckImgComposition";
-import ArticleA from "./utils/ArticleA";
+import TruckImage from "../utils/ImgCompositionA";
+import ArticleA from "../utils/ArticleA";
 
 const data = {
   block: "transport",

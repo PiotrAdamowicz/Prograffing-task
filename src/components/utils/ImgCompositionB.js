@@ -5,7 +5,7 @@ import RatingIcon from "../../svg/oceny.svg";
 import WorkerIcon from "../../svg/pracownik.svg";
 import LoopsIcon from "../../svg/szlaczek 2.svg";
 
-export default function PentaImage() {
+export default function CompositionB() {
   return (
     <div className="imagesContainer">
       <img src={ShipPic} alt="ship" />

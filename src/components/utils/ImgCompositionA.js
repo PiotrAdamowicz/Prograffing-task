@@ -5,7 +5,7 @@ import LttersIcon from "../../svg/literki.svg";
 import ZigZagIcon from "../../svg/szlaczek 1.svg";
 import TruckPic from "../../images/tir 1.png";
 
-export default function PentaImage() {
+export default function CompositionA() {
   return (
     <div className="imagesContainer">
       <img src={TruckPic} alt="truck" />

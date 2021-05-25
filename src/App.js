@@ -1,8 +1,9 @@
 import "./styles/App.scss";
-import Nav from "./components/Nav";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import About from "./components/About";
+import Nav from "./components/layout/Nav";
+import Footer from "./components/layout/Footer";
+import Header from "./components/layout/Header";
+import About from "./components/layout/About";
+import Service from "./components/layout/Service";
 
 function App() {
   return (
@@ -10,9 +11,7 @@ function App() {
       <Nav />
       <Header />
       <About />
-      <section id="service" className="service">
-        Service
-      </section>
+      <Service />
       <section id="team" className="team">
         Our Team
       </section>

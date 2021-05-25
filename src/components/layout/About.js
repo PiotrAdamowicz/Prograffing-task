@@ -1,9 +1,10 @@
 import React from "react";
-import ShipImage from "./utils/ShipImgComposition";
-import ArticleB from "./utils/ArticleB";
-import Stat from "./utils/Stat";
-import WorkflowStep from "./utils/WorkflowStep";
-import Link from "./utils/Link";
+import ShipImage from "../utils/ImgCompositionB";
+import ArticleB from "../utils/ArticleB";
+import Stat from "../utils/Stat";
+import WorkflowStep from "../utils/WorkflowStep";
+import Link from "../utils/Link";
+import BtnGetStarted from "../utils/BtnGetStarted";
 
 const data = {
   block: "about",
@@ -59,6 +60,7 @@ export default function About() {
     <section id="about" className="about">
       <ShipImage />
       <ArticleB data={data} />
+      <BtnGetStarted />
       <h3 className="statistics__title">
         Communication, trade and other forms of exchange
       </h3>
