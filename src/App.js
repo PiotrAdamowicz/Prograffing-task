@@ -5,6 +5,7 @@ import Header from "./components/layout/Header";
 import About from "./components/layout/About";
 import Service from "./components/layout/Service";
 import Team from "./components/layout/Team";
+import Pricing from "./components/layout/Pricing";
 
 function App() {
   return (
@@ -14,9 +15,7 @@ function App() {
       <About />
       <Service />
       <Team />
-      <section id="pricing" className="pricing">
-        Pricing
-      </section>
+      <Pricing />
       <section id="faq" className="faq">
         Faq
       </section>

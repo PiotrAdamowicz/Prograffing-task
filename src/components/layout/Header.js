@@ -6,8 +6,10 @@ import ArticleA from "../utils/ArticleA";
 const data = {
   block: "transport",
   title: "From One Location To Another",
-  element: "article",
+  element: "transport__article",
   text: "Transport can be divided into infrastructure, vehicles and operations. Infrastructure includes roads, railways.",
+  unique: true,
+  sectionName: "Transport",
 };
 
 export default function Header() {

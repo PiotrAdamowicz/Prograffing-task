@@ -1,12 +1,23 @@
 import React from "react";
 
 export default function ArticleA(props) {
-  const { title, element, text, block } = props.data;
+  const {
+    title,
+    element,
+    text,
+    block,
+    unique = false,
+    sectionName = "",
+  } = props.data;
   return (
     <article className={`${block}__${element}`}>
-      <p className="sectionName">{block}</p>
-      <h1 className="title">{title}</h1>
-      <p className="text">{text}</p>
+      <p className={`${block}__sectionName`}>{sectionName}</p>
+      {unique ? (
+        <h1 className={`${block}__title`}>{title}</h1>
+      ) : (
+        <h2 className={`${block}__title`}>{title}</h2>
+      )}
+      <p className={`${block}__text`}>{text}</p>
       <button>Get Started</button>
     </article>
   );
