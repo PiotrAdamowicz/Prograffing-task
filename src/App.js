@@ -4,6 +4,7 @@ import Footer from "./components/layout/Footer";
 import Header from "./components/layout/Header";
 import About from "./components/layout/About";
 import Service from "./components/layout/Service";
+import Team from "./components/layout/Team";
 
 function App() {
   return (
@@ -12,9 +13,7 @@ function App() {
       <Header />
       <About />
       <Service />
-      <section id="team" className="team">
-        Our Team
-      </section>
+      <Team />
       <section id="pricing" className="pricing">
         Pricing
       </section>
