@@ -1,0 +1,21 @@
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    &__logo{
+        height: 15%;
+        
+        &Icon{
+            height: 2rem;
+            margin: 2rem auto;
+        }
+    }
+    
+    &__item{
+        height: 15%;
+        transition: display .2s ease-in;
+    }
+
+}

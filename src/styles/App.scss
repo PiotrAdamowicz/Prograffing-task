@@ -1,6 +1,28 @@
 @import "./Typography.scss";
 @import "./Nav.scss";
 
+/* My own reset for specific tags */
+button{
+  border:none;
+  background:none;
+  color:white;
+  font-family: 'Roboto';
+  font-size: 0.875rem;
+}
+a{
+  text-decoration: none;
+  font-size: 2rem;
+  transition: background-color ease .2s;
+}
+a::first-letter{
+  text-transform: uppercase;
+}
+a:hover{
+  background-color: rgba(255, 255, 255, .6);
+}
+
+
+
 .App {
   display: flex;
   flex-direction: column;

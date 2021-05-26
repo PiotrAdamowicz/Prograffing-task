@@ -9,6 +9,7 @@ import Pricing from "./components/layout/Pricing";
 import Faq from "./components/layout/Faq";
 import Contact from "./components/layout/Contact";
 import BottomNav from "./components/layout/BottomNav";
+import GetStartedCard from "./components/layout/GetStartedCard";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Pricing />
       <Faq />
       <Contact />
+      <GetStartedCard />
       <BottomNav />
       <Footer />
     </div>
@@ -28,3 +30,4 @@ function App() {
 }
 
 export default App;
+//TODO: Slider/slideshows, Get Started Components and connect to buttons

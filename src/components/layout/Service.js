@@ -2,6 +2,7 @@ import React from "react";
 import ArticleB from "../utils/ArticleB";
 import DeliveryManImage from "../utils/ImgCompositionC";
 import Link from "../utils/Link";
+import GetStartedCard from "./GetStartedCard";
 
 const data = {
   block: "service",
@@ -19,6 +20,7 @@ export default function Service() {
       <ArticleB data={data} />
       <Link className="service__link">Learn More</Link>
       <DeliveryManImage />
+      <GetStartedCard />
     </section>
   );
 }

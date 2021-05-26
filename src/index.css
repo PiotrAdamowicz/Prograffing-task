@@ -29,7 +29,7 @@ ol[role='list'] {
 }
 
 /* Set core root defaults */
-html:focus-within {
+html:focus-within,html {
   scroll-behavior: smooth;
 }
 
@@ -75,14 +75,7 @@ select {
     scroll-behavior: auto !important;
   }
 }
-/* My own reset for specific tags */
-button{
-  border:none;
-  background:none;
-  color:white;
-  font-family: 'Roboto';
-  font-size: 0.875rem;
-}
+
 
 
 body {
