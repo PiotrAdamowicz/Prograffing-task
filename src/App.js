@@ -7,6 +7,7 @@ import Service from "./components/layout/Service";
 import Team from "./components/layout/Team";
 import Pricing from "./components/layout/Pricing";
 import Faq from "./components/layout/Faq";
+import Contact from "./components/layout/Contact";
 
 function App() {
   return (
@@ -18,9 +19,7 @@ function App() {
       <Team />
       <Pricing />
       <Faq />
-      <section id="contact" className="contact">
-        Contact Us
-      </section>
+      <Contact />
       <section id="bottomNav" className="bottomNav">
         BOttom Nav
       </section>
