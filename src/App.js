@@ -8,6 +8,7 @@ import Team from "./components/layout/Team";
 import Pricing from "./components/layout/Pricing";
 import Faq from "./components/layout/Faq";
 import Contact from "./components/layout/Contact";
+import BottomNav from "./components/layout/BottomNav";
 
 function App() {
   return (
@@ -20,9 +21,7 @@ function App() {
       <Pricing />
       <Faq />
       <Contact />
-      <section id="bottomNav" className="bottomNav">
-        BOttom Nav
-      </section>
+      <BottomNav />
       <Footer />
     </div>
   );

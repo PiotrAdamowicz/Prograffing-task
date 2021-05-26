@@ -1,8 +1,9 @@
 import React from "react";
 import Link from "../utils/Link";
+import TraLogo from "../utils/TraLogo";
 
 const links = [
-  "header",
+  <TraLogo block="nav" />,
   "about",
   "service",
   "team",
