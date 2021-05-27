@@ -8,7 +8,7 @@ import Link from "../utils/Link";
 const data = {
   block: "about",
   title: "Connect Via One Platform",
-  element: "about__article",
+  element: "article",
   text1:
     "Transport can be divided into infrastructure, vehicles and operations. Infrastructure includes roads.",
   text2:
@@ -57,7 +57,7 @@ const workflowData = [
 export default function About() {
   return (
     <section id="about" className="about">
-      <ShipImage />
+      <ShipImage block="about" />
       <ArticleB data={data} />
       <button className="about__getStartedBtn">Get Started</button>
       <h3 className="statistics__title">

@@ -1,12 +1,12 @@
-@import "./partials//mixins";
 
 .header{
-    
-    display: flex;
-    flex-direction: column;
-    position: relative;
+    height: 70vh;
     
     &__article{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: .5rem 0;
         width: 100%;
         height: 100%;
         z-index: 10;
@@ -16,16 +16,19 @@
         
     }
     &__title{
-        margin: .5rem 0;
+        // margin: .8rem 0;
         display: block;
         z-index: 10;
     }
     &__text{
-        margin: 1rem 1rem .5rem 1rem;
+        margin:0 .5rem;
         text-align: justify;
     }
+    
     @include getStartedBtn;
     @include imageComposition(truckImg, truckIcon, parcelDotIcon, lettersIcon,zigZagIcon);
-   
+    &__truckImg{
+        display: block;
+    }
     
 }

@@ -4,14 +4,15 @@
 @mixin title{
     font-size: .95rem;
     text-transform: uppercase;
-    margin: .5rem 0;
+    margin-top: 1rem;
 }
 @mixin getStartedBtn{
     &__getStartedBtn{
         background-color: $getStarted-btn-bg;
         border-radius: $btn-radius;
         padding: $button 2rem;
-        margin: $button;
+        margin: 0 $button;
+        z-index: 10;
     }
 }
 @mixin mobileImgBg{
@@ -19,6 +20,9 @@
     opacity: 25%;
 }
 @mixin imageComposition($img, $icon1, $icon2, $icon3, $icon4){
+    &{
+        position: relative;
+    }
     &__imagesContainer{
         overflow: hidden;
         width:100%;
@@ -33,16 +37,19 @@
     &__#{$img}{
         @include mobileImgBg;
         display: block;
-        width: 40%;
-        top:32%;
-        right:-15%;      
+        width: 90%;
+        max-width: 300px;
+        top:45%;
+        left:50%;
+        transform: translate(-50%, -50%);    
 
     }
     &__#{$icon1}{
         @include mobileImgBg;
-        height: 30%;
+        max-height: 30%;
         top:32%;
         left:-15%;
+        display: none;
 
     }
     &__#{$icon2}{
@@ -50,10 +57,16 @@
         height: 20%;
         bottom: 5%;
         left:-10%;
+        display: none;
     }
     &__#{$icon3}, &__#{$icon4}{
         display: none;
     }
     
 
+}
+@mixin imgReset($img, $icon1, $icon2, $icon3, $icon4){
+    &__#{$img},&__#{$icon1},&__#{$icon2},&__#{$icon3},&__#{$icon4}{
+        display: none;
+    }
 }

@@ -5,14 +5,27 @@ import RatingIcon from "../../svg/oceny.svg";
 import WorkerIcon from "../../svg/pracownik.svg";
 import LoopsIcon from "../../svg/szlaczek 2.svg";
 
-export default function CompositionB() {
+export default function CompositionB(props) {
+  const { block } = props;
   return (
-    <div className="imagesContainer">
-      <img src={ShipPic} alt="ship" />
-      <img src={ShpIcon} alt="ship icon" />
-      <img src={RatingIcon} alt="5 star rating" />
-      <img src={WorkerIcon} alt="worker in helmet head icon" />
-      <img src={LoopsIcon} alt="abstract loops" />
+    <div className={`${block}__imagesContainer`}>
+      <img className={`${block}__shipImg`} src={ShipPic} alt="ship" />
+      <img className={`${block}__shipIcon`} src={ShpIcon} alt="ship icon" />
+      <img
+        className={`${block}__starsIcon`}
+        src={RatingIcon}
+        alt="5 star rating"
+      />
+      <img
+        className={`${block}__workerIcon`}
+        src={WorkerIcon}
+        alt="worker in helmet head icon"
+      />
+      <img
+        className={`${block}__abstractIcon`}
+        src={LoopsIcon}
+        alt="abstract loops"
+      />
     </div>
   );
 }

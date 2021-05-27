@@ -1,0 +1,16 @@
+.about{
+    @include imgReset(shipImg, shipIcon, starsIcon,workerIcon,abstractIcon);display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 250vh;
+   
+    &__shipImg{
+        display: block;
+    }
+
+    &__sectionName{
+        @include title;
+        
+    }
+    @include getStartedBtn;
+}
