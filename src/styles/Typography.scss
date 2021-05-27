@@ -1,52 +1,87 @@
 // Colors mostly set for  Dark BackGround
 
 @import "./partials/variables.scss";
+@import "./partials/mixins.scss";
 @import "./Links.scss";
 
-@media  (min-width: $bp-desktop){ 
     h1{
-        font-size: 4.5rem; //72
-        letter-spacing: -3px;
-        line-height: 5rem; //80
+        font-size: 2rem;
+        line-height: 2.5rem;
+        width: 100%;
         font-family: 'Black Ops One';
-        color: white;
+        color: rgba(255, 255, 255, 0.8);
+        letter-spacing: -3px;
+        text-align: center;
     }
     h2{
-        font-size: 3.5rem; //56
+        
         letter-spacing: -2px;
-        line-height: 4rem; //80
         font-family: 'Black Ops One';
         color:#4D5163;
     }
     
     h3{
-        font-size: 2.5rem; //40
+        
         font-family: 'Black Ops One';
         color:#4D5163;
     }
     h4{
-        font-size: 1.5rem; //24
+       
         font-family: 'Roboto';
         font-weight: bold;
         color:white;
     }
     h5{
-        font-size: 1.25rem; //20
-        line-height: 2rem; //32
+       
         font-family: 'Robot';
         color:white;
     }
     h6{
-        font-size: 0.875rem; //14
-        line-height: 1.5rem; //24
+        
         font-family: 'Robot';
         color:rgba(77,81,99,0.5);
     }
     p{
-        font-size: 1rem; //16
-        line-height: 2rem; //32
-        font-family: 'Robot';
         color:rgba(255, 255, 255, 0.5);
-    } 
-}
+    }
+    section{
+        min-width: 100%;
+        padding: 1rem;
+        
+    }
+    
+       
+    
+    @media  (min-width: $bp-desktop){ 
+        
+    
+        h1{
+            font-size: 4.5rem; //72
+            line-height: 5rem; //80
+        }
+        h2{
+            font-size: 3.5rem; //56
+            line-height: 4rem; //80
+        }
+        h3{
+            font-size: 2.5rem; //40
+        }
+        h4{
+            font-size: 1.5rem; //24
+        }
+        h5{
+            font-size: 1.25rem; //20
+            line-height: 2rem; //32
+        }
+        h6{
+            font-size: 0.875rem; //14
+            line-height: 1.5rem; //24
+        }
+        p{
+            font-size: 1rem; //16
+        line-height: 2rem; //32
+        }
+    }
+    
+
 

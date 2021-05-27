@@ -18,7 +18,7 @@ export default function ArticleA(props) {
         <h2 className={`${block}__title`}>{title}</h2>
       )}
       <p className={`${block}__text`}>{text}</p>
-      <button>Get Started</button>
+      <button className={`${block}__getStartedBtn`}>Get Started</button>
     </article>
   );
 }

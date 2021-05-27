@@ -18,7 +18,8 @@ p,
 figure,
 blockquote,
 dl,
-dd {
+dd,
+ul {
   margin: 0;
 }
 
@@ -80,7 +81,7 @@ select {
 
 body {
   margin: 0;
-  font-family: 'Roboto','Black Ops One', cursive, sans-serif;
+  font-family: 'Roboto','Black Ops One', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

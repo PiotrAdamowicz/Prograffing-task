@@ -1,5 +1,5 @@
 import "./styles/App.scss";
-import Nav from "./components/layout/Nav";
+// import Nav from "./components/layout/Nav";
 import Footer from "./components/layout/Footer";
 import Header from "./components/layout/Header";
 import About from "./components/layout/About";
@@ -14,7 +14,7 @@ import GetStartedCard from "./components/layout/GetStartedCard";
 function App() {
   return (
     <div className="App">
-      <Nav />
+      {/* <Nav /> */}
       <Header />
       <About />
       <Service />

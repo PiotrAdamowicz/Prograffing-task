@@ -1,21 +1,43 @@
+@import "./partials//variables";
+
 .nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-    &__logo{
-        height: 15%;
-        
-        &Icon{
+    
+    @media (max-width: $bp-mobile){
+        position: fixed;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        transition: height .7s ease-out;
+        &--active{
+            height: 100vh;
+        }
+        &__logoBtn{
+            min-height: 10vh;
+        }
+        &__logoIcon{
             height: 2rem;
             margin: 2rem auto;
+            cursor: pointer;
         }
-    }
-    
-    &__item{
-        height: 15%;
-        transition: display .2s ease-in;
+        &__items{
+            position: absolute;
+            top:15vh;
+            left:0%;
+            height: 70vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0;
+            transform: translateX(-100%);
+            transition: transform .5s ease-in-out;
+            &--active{
+                transform: translateY(0)
+            }
+        }
+        
     }
 
 }

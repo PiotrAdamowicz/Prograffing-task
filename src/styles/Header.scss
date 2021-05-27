@@ -1,0 +1,31 @@
+@import "./partials//mixins";
+
+.header{
+    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+    &__article{
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+    }
+    &__sectionName{
+        @include title;
+        
+    }
+    &__title{
+        margin: .5rem 0;
+        display: block;
+        z-index: 10;
+    }
+    &__text{
+        margin: 1rem 1rem .5rem 1rem;
+        text-align: justify;
+    }
+    @include getStartedBtn;
+    @include imageComposition(truckImg, truckIcon, parcelDotIcon, lettersIcon,zigZagIcon);
+   
+    
+}

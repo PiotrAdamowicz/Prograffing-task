@@ -5,7 +5,7 @@ export default function TraLogo(props) {
   const { block } = props;
   return (
     <button onClick={props.toggleMenu} className={`${block}__logoBtn`}>
-      <img src={LogoIcon} alt="" className={`${block}__logoIcon`} />
+      <img src={LogoIcon} alt="t r a logo" className={`${block}__logoIcon`} />
     </button>
   );
 }
