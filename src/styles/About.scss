@@ -1,16 +1,157 @@
+@import "./partials//mixins";
+@import "./partials//colors";
+
 .about{
-    @include imgReset(shipImg, shipIcon, starsIcon,workerIcon,abstractIcon);display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 250vh;
-   
+    width: 50%;
+    background-color: #fff;
+    padding: 10vw 10vw;
+
+    //UPPER LEFT section
+
+    &__imagesContainer{
+        grid-area: ship;
+        position: relative;
+        width: 100%;
+        z-index: 10;
+    }
+    &__imagesBg{
+    top:0;
+    left:0;
+    border-radius: 50%;
+    position: absolute;
+    height: auto;
+    max-height: 530px;
+    width: 100%;
+    background-color: $lighter-on-dark-bg;
+    z-index: 1;
+    border-radius: 50%;
+    padding-bottom: 100%;
+    }
     &__shipImg{
-        display: block;
+        z-index: 20;
+        position: absolute;
+        max-width: calc(100%/2);
+        width:25vw;
+        top: 50%;;
+        left: 50%;
+        transform: translate(-50%, -50%);       
+    }
+    &__starsIcon{
+        max-width: 249px;
+        position: absolute;
+        z-index: 30;
+        top: 10%;;
+        left: -6%;
+    }
+    &__shipIcon{
+        max-width: 177px;
+        position: absolute;
+        z-index: 3;
+        top: 10%;;
+        right: 10%;
+    }
+    &__abstractIcon{
+        max-width: 70%;
+        position: absolute;
+        z-index: 2;
+        bottom:5%;
+        left: -10%;
+        right: 30%;
+    }
+    &__workerIcon{
+        max-width: 195px;
+        position: absolute;
+        z-index: 2;
+        bottom:10%;
+        right: 8%;
     }
 
-    &__sectionName{
-        @include title;
-        
+    //UPPER RIGHT section
+
+    &__shipArticle{
+        display: flex;
     }
+    &__article{
+        grid-area: article;
+        width: 100%;
+        margin-left: 7vh;
+        text-align: left;
+        padding-bottom: 20%;
+    }
+    &__sectionName{
+        @include title-lx;
+        color:#0666F6;
+    }
+    &__title{
+        margin-top: 1.5rem;
+    }
+    &__text{
+        margin-top: 1.5rem;
+        color: rgb(77, 81, 99);
+    }
+    &__text1{
+        margin-top: 1.5rem;
+        color: rgba(77, 81, 99, 0.5);
+        font-weight: bold;
+        display: inline-block;
+    }
+  
     @include getStartedBtn;
+    &__getStartedBtn{
+        grid-area: btn;
+    }
+    //BOTTOM section
+
+    .statistics{
+        &__title{
+        }
+        &__data{
+            display: flex;
+            justify-content: space-around ;
+        }
+        &__text{
+            color: rgba(77, 81, 99, 0.5);
+            font-size: 0.875rem;
+            letter-spacing: 0px;
+        }
+    }
+    .workflow{
+        margin-top: 4rem; //TODO: possible % for better scaling, will see
+        &__steps{
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        margin-top: 4rem;
+        
+        }
+        &__step{
+            text-align: left;
+        }
+        &__stepId{
+            text-align: center;
+            color: white;
+            font-family: 'Black Ops One';
+            font-size: 4.5rem;
+            background-color: #ED7171;
+            border-radius: 50%;
+            line-height: 6.5rem;
+            width: 6.5rem;
+            height: 6.5rem;
+        }
+        &__title{
+            margin-top: 1.5rem;
+            color: #4D5163;
+            font-weight: bold;
+        }
+        &__text{
+            margin-top: 1rem;
+            width: 50%;
+            margin: 1rem auto;
+            color: rgba(77, 81, 99, 0.5);
+        }
+    }
+    &__footerLink{
+        margin-left: .5rem;
+        color: #4D5163;
+    }
 }

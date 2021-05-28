@@ -1,34 +1,82 @@
 
 .header{
-    height: 70vh;
-    
+    width: 100%;
+    display: flex;
+    padding: 10vw 10vw;
+    @include headerMQ;
+
+    //LEFT section
     &__article{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: .5rem 0;
-        width: 100%;
-        height: 100%;
-        z-index: 10;
+        width: 50%;
+        margin-right: 7vh;
+        text-align: left;
     }
     &__sectionName{
-        @include title;
-        
+       @include title-lx;        
     }
     &__title{
-        // margin: .8rem 0;
-        display: block;
-        z-index: 10;
+        text-align: left;
+        margin-top: 1.5rem;
     }
     &__text{
-        margin:0 .5rem;
-        text-align: justify;
+       margin-top: 1.5rem;
     }
+
     
     @include getStartedBtn;
-    @include imageComposition(truckImg, truckIcon, parcelDotIcon, lettersIcon,zigZagIcon);
-    &__truckImg{
-        display: block;
+
+    //RIGHT section
+   &__imagesContainer{
+       position: relative;
+       width: 50%;
+       z-index: 10;
+   }
+   &__imagesBg{
+    top:0;
+    left:0;
+    position: absolute;
+    height: auto;
+    max-height: 530px;
+    width: 100%;
+    background-color: $lighter-bg;
+    z-index: 1;
+    border-radius: 50%;
+    padding-bottom: 100%;
+   }
+   &__truckImg{
+       z-index: 20;
+       position: absolute;
+       max-width: calc(110%/2);
+       top: 50%;;
+       left: 50%;
+       transform: translate(-50%, -50%);       
+   }
+   &__truckIcon{
+       max-width: 166px;
+       position: absolute;
+       z-index: 2;
+       top: 15%;;
+       left: 5%;
+   }
+   &__parcelDotIcon{
+    max-width: 177px;
+    position: absolute;
+    z-index: 30;
+    top: 15%;;
+    right: 8%;
     }
-    
+    &__lettersIcon{
+        max-width: 249px;
+        position: absolute;
+        z-index: 2;
+        bottom:15%;
+        left: -2%;
+    }
+    &__zigZagIcon{
+        max-width: 195px;
+        position: absolute;
+        z-index: 2;
+        bottom:10%;
+        right: 0%;
+    }  
 }

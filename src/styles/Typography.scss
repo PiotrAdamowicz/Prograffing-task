@@ -26,18 +26,13 @@
         color:#4D5163;
     }
     h4{
-       
-        font-family: 'Roboto';
         font-weight: bold;
-        color:white;
+        color:#4D5163;
     }
     h5{
-       
-        font-family: 'Robot';
         color:white;
     }
-    h6{
-        
+    h6{        
         font-family: 'Robot';
         color:rgba(77,81,99,0.5);
     }
@@ -52,7 +47,7 @@
     
        
     
-    @media  (min-width: $bp-desktop){ 
+    // @media  (min-width: $bp-desktop){ 
         
     
         h1{
@@ -81,7 +76,7 @@
             font-size: 1rem; //16
         line-height: 2rem; //32
         }
-    }
+    // }
     
 
 

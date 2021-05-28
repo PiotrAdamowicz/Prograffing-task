@@ -31,35 +31,16 @@ const statistics = [
     secondary: "Eiusmod Tempor",
   },
 ];
-const workflowData = [
-  {
-    id: "1",
-    title: "Order",
-    text: "Carries the goods and passengers through airways by using.",
-  },
-  {
-    id: "2",
-    title: "Deliver",
-    text: "Passengers through airways by using different aircraft like passenger.",
-  },
-  {
-    id: "3",
-    title: "Pick Up",
-    text: "Different aircraft like passenger aircraft, cargo aircraft.",
-  },
-  {
-    id: "4",
-    title: "Be Happy",
-    text: "This is the fastest mode of transport but it does not provide door to door.",
-  },
-];
 
 export default function About() {
   return (
     <section id="about" className="about">
-      <ShipImage block="about" />
-      <ArticleB data={data} />
-      <button className="about__getStartedBtn">Get Started</button>
+      <article className="about__shipArticle">
+        <ShipImage block="about" />
+        <ArticleB data={data}>
+          <button className="about__getStartedBtn">Get Started</button>
+        </ArticleB>
+      </article>
       <h3 className="statistics__title">
         Communication, trade and other forms of exchange
       </h3>
@@ -67,20 +48,17 @@ export default function About() {
         {statistics.map((stat) => (
           <Stat block="statistics" key={stat.title} data={stat} />
         ))}
-        <aside className="workflowSteps">
-          {workflowData.map((data) => (
-            <WorkflowStep key={data.id} block="workflowSteps" data={data} />
-          ))}
-        </aside>
-        <div className="about__footer">
-          <p>
-            Want to know more?
-            <span>
-              <Link>Learn More</Link>
-            </span>
-          </p>
-        </div>
       </aside>
+
+      <aside className="workflow">
+        <WorkflowStep />
+      </aside>
+      <div className="about__footer">
+        <p className="about__text1">Want to know more?</p>
+        <span>
+          <Link className="about__footerLink">Learn More</Link>
+        </span>
+      </div>
     </section>
   );
 }
