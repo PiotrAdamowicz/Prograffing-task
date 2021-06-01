@@ -15,7 +15,9 @@ const data = {
 export default function Header() {
   return (
     <section id="header" className="header">
-      <ArticleA data={data} />
+      <ArticleA data={data}>
+        <button className="header__getStartedBtn">Get Started</button>
+      </ArticleA>
       <TruckImage block="header" />
     </section>
   );

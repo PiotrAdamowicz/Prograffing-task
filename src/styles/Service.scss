@@ -1,0 +1,54 @@
+@import "./partials/mixins";
+
+.service{
+    width: 100%;
+    padding: 10vw 10vw;
+    display: flex;
+
+    @include getStarted(4);
+    @include articleB;
+
+    @include imagesConainerC(workerContainer, truckImg,handParcelIcon, harborImg, abstractIcon,planeImg);
+    &__imageBg{
+        height: 480px;
+    }
+
+    &__workerContainer{
+        background-color: #ED7171;
+        border-radius: 2rem;
+        max-width: calc(100%/2);
+    }
+    &__workerImg{
+        margin: 2rem 1rem 0;
+        height: 232px;
+        width: 224px;
+    }
+    &__handParcelIcon{
+        top:12%;
+        left:12%;
+    }
+    &__truckImg{
+        max-width: 248px;
+        max-height: 251px;
+        right:-4%;
+        top:-8%;
+    }
+    &__harborImg{
+        max-width: 200px;
+        bottom:8%;
+        right: 5%;
+    }
+    &__planeImg{
+        max-width: 200px;
+        bottom: 12%;
+        left:2%;
+    }
+    &__abstractIcon{
+        left: -10%;
+        top:-10%;
+
+    }
+
+
+    &__getStartedCard{}
+}

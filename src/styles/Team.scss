@@ -1,0 +1,54 @@
+.team{
+    background-color: #fff;
+    padding: 8vw 10vw 12vw;
+    &__sectionName{
+        color: #0666F6;
+        letter-spacing: 3px;
+        text-transform: uppercase;   
+        margin-bottom: 1rem;    
+    }
+    &__text{
+        width: 50%;
+        margin: 0 auto 8vw;
+        color: rgba(77, 81, 99, 0.5);
+    }
+    &__slider{
+        display: flex;
+    }
+}
+.slider{
+    &__person{
+        max-width:422px;
+        max-height: 400px;
+    }
+    &__article{
+        text-align: left;
+        padding: 1rem 3rem;
+    }
+    &__title{
+        margin-bottom: 2rem;
+    }
+    &__name{
+        color: #4D5163;
+    }
+    &__text{
+        color: #4d516380;
+        margin-bottom: 1.5rem;
+    }
+    &__name{
+        font-weight: normal;
+    }
+    &__left,&__right{
+        height: 3rem;
+        width: 3rem;
+        border:solid 2px rgba(6, 102, 246, .30);
+        border-radius: 50%;
+        background-image: url(../svg/btnArrowBlue.svg);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+    &__left{
+        transform: rotate(180deg);
+        margin-right: .5rem;
+    }
+}

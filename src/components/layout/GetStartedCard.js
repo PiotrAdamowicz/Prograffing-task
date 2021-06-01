@@ -13,7 +13,7 @@ export default function GetStartedCard(props) {
         </p>
       </article>
       <button className={`${block}__getStartedBtn`}>
-        <h6>Get Started</h6>
+        <h6 className={`${block}__getStartedBtnText`}>Get Started</h6>
       </button>
     </aside>
   );

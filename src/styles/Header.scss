@@ -24,6 +24,9 @@
 
     
     @include getStartedBtn;
+    &__getStartedBtn{
+        margin-top:2rem;
+    }
 
     //RIGHT section
    &__imagesContainer{

@@ -7,7 +7,7 @@ import GetStartedCard from "./GetStartedCard";
 const data = {
   block: "service",
   title: "Track Deliveries With Technology",
-  element: "service__article",
+  element: "article",
   text1:
     "There is only one difference between transport and transportation, that is transport is for public.",
   text2:
@@ -16,11 +16,14 @@ const data = {
 
 export default function Service() {
   return (
-    <section id="service" className="service">
-      <ArticleB data={data} />
-      <Link className="service__link">Learn More</Link>
-      <DeliveryManImage />
-      <GetStartedCard />
-    </section>
+    <>
+      <section id="service" className="service">
+        <ArticleB data={data}>
+          <Link className="service__link">Learn More</Link>
+        </ArticleB>
+        <DeliveryManImage block="service" />
+      </section>
+      <GetStartedCard block="service" />
+    </>
   );
 }

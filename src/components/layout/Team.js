@@ -6,7 +6,7 @@ const data = {
   block: "slider",
   title:
     "Now it’s almost like having a customer right here with me. I just choose the package and click save. It’s so simple.",
-  element: "slider__article",
+  element: "article",
   text1:
     "Cargo by aircraft such as airplanes and helicopters. Air transportation has become the primary means of common-carrier traveling. Air transportation also provides a communication or medical link, which is sometimes vital, between the different groups.",
   text2: "Peter Taylor",
@@ -24,9 +24,10 @@ export default function Team() {
       </p>
       <aside className="team__slider">
         <img className="slider__person" src={ManagerPic} alt="person" />
-        <ArticleE data={data} />
-        <button className="slider__left">Left</button>
-        <button className="slider__right">Right</button>
+        <ArticleE data={data}>
+          <button className="slider__left"></button>
+          <button className="slider__right"></button>
+        </ArticleE>
       </aside>
     </section>
   );

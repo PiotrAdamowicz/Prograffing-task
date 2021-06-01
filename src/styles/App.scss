@@ -4,6 +4,10 @@
 @import "./Nav.scss";
 @import "./Header.scss";
 @import "./About.scss";
+@import "./Service.scss";
+@import "./Team.scss";
+@import "./Pricing.scss";
+@import "./Faq.scss";
 
 
 /* My own reset for specific tags */
@@ -16,6 +20,7 @@ button{
   color:white;
   font-family: 'Black Ops One';
   font-size: 0.875rem;
+  cursor: pointer;
 }
 a{
   text-decoration: none;

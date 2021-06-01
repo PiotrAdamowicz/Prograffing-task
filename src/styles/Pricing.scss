@@ -1,0 +1,151 @@
+.pricing{
+    padding: 10vw 10vw 18vw;
+    position: relative;
+    &__quote{
+        top: 5vw;
+        left: 10vw;
+        color: white;
+        font-size: 4.5rem;
+        letter-spacing: -3px;
+        line-height: 5rem;
+        font-family: 'Black Ops One';
+        position: absolute;
+    }
+    &__businessPartnerQuote{
+        color: white;
+        text-align: left;
+    }
+    &__avatar{
+        position: absolute;
+        bottom: 0;
+        left:50%;
+        transform: translateX(-50%);
+        &Container{
+            display: flex;
+            margin-top: 3rem;
+            margin-bottom: 15%;
+        }
+        &Text{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            text-align: left;
+            margin-left: 1rem;
+            padding: .5rem;
+        }
+        &Bg{
+            position: relative;
+            background-color: #ED7171;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+        }
+    }
+    &__partnerName{
+        color: white;
+    }
+    &__cost{
+        display:flex;
+        justify-content: space-between;
+    }
+    &__article{
+        width: 45%;
+        text-align: left;
+        margin-top: 7rem;
+    }
+    &__sectionName{
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+    }
+    &__title{
+        color: white;
+        margin-bottom: 1.5rem;
+    }
+    &__text{
+        color: white;
+        font-weight: normal;
+        font-size: 1.25rem;
+    }
+    &__contactBtn{
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: $btn-radius;
+        padding: $button 2.5rem;
+        margin-top: 2.5rem;
+    }
+    @include getStartedBtn;
+    &__getStartedBtn{
+        min-width: 170px;
+    }
+    &__cardLeft,&__cardRight{
+        height: 3rem;
+        width: 3rem;
+        border:solid 2px rgba(255, 255, 255, .30);
+        border-radius: 50%;
+        background-image: url(../svg/btnArrow.svg);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        margin: 1rem auto 4rem;
+    }
+    &__cardLeft{
+        transform: rotate(180deg);
+        margin-right: 1rem;
+        margin-left: 5rem;
+    }
+    &__card{     
+        position: relative;   
+        background-color: #fff;
+        border-radius: 2rem;
+        width: 100%;
+        max-width: 506px;
+        height:384px;
+        z-index: 30;
+        padding: 2.4375rem 3rem;       
+        &Container{
+            position: relative;
+            width: 45%;
+            &::before{
+               @include circle(250, 5%, -10%, #383759);
+            }
+            &::after{
+                @include circle(350, 45%, 40%, #383759);
+            }
+        }
+        &ZigZag{
+            position: absolute;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        &Title{
+            text-align: left;
+        }
+    }
+    &__parcels{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 70%;
+       
+    }
+    &__imageContainer{
+        height: 40%;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-between;
+    
+    }
+    &__darkParcel{
+        margin-top: .7rem;
+    }
+    &__blueParcel{
+       margin-top: 2rem;
+    }
+    &__parcelType{
+        color: #4D5163;
+        font-weight: normal;
+    }
+}

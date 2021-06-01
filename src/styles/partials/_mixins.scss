@@ -15,13 +15,37 @@
         background-color: $getStarted-btn-bg;
         border-radius: $btn-radius;
         padding: $button 1.7rem;
-        margin-top:2rem;
         z-index: 10;
     }
 }
-@mixin mobileImgBg{
-    position: absolute;
-    opacity: 25%;
+@mixin getStarted ($img){
+
+    &__getStartedCard{
+        display: flex;
+        justify-content: space-between;
+        background-color: #0666F6;
+        background-image: url('../../svg/szlaczek\ #{$img}.svg');
+        background-position: right;
+        background-repeat: no-repeat;
+        margin: 15% 1rem;
+        border-radius: 2rem;
+        padding: 8% 8%;
+    }
+    &__title{
+        color: white;
+    }
+    &__getStartedBtn{
+        height: 20%;
+        background-color: #ED7171;
+        border-radius: .75rem;               
+        &Text{
+            color: white;
+            font-family: 'Black Ops One';
+            margin: 1rem 2rem;
+            text-transform:uppercase;
+        }
+    }
+    
 }
 @mixin imageComposition($img, $icon1, $icon2, $icon3, $icon4){
     &{
@@ -73,6 +97,70 @@
     &__#{$img},&__#{$icon1},&__#{$icon2},&__#{$icon3},&__#{$icon4}{
         display: none;
     }
+}
+
+@mixin imagesConainerC($item1,$item2,$item3,$item4,$item5,$item6){
+    &__imagesContainer{
+        position: relative;
+        width: 50%;
+        z-index: 10;
+    }
+    &__imagesBg{
+     top:0;
+     left:0;
+     position: absolute;
+     width: 100%;
+     background-color: $lighter-bg;
+     z-index: 1;
+     border-radius: 50%;
+     padding-bottom: 100%;
+    }
+    &__#{$item1}{
+        z-index: 20;
+        position: absolute;
+        top: 50%;;
+        left: 50%;
+        transform: translate(-50%, -50%);       
+    }
+    &__#{$item2}, &__#{$item4},&__#{$item5},&__#{$item6}{
+        position: absolute;
+        z-index: 2;
+    }
+    &__#{$item3}{
+
+     position: absolute;
+     z-index: 30;
+     }
+   
+}
+
+@mixin articleB{
+    &__article{
+        width: 50%;
+        margin-right: 7vh;
+        text-align: left;
+    }
+    &__sectionName{
+        @include title-lx;        
+     }
+     &__title{
+         text-align: left;
+         margin-top: 1.5rem;
+     }
+     &__text{
+        margin-top: 1.5rem;
+     }
+}
+@mixin circle($size, $top, $left, $color){
+    content: "";
+    display: block;
+    height: #{$size}px;
+    width: #{$size}px;
+    background-color: #{$color};
+    position: absolute;
+    border-radius: 50%;
+    top: #{$top};
+    left: #{$left};
 }
 
 //MEDIA Q
