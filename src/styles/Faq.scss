@@ -21,8 +21,19 @@
     }
     &__itemText{
         color: #4D5163;
+        visibility: hidden;  
+        height: 0;
+        &--active{
+            visibility: visible;
+            height: 100%;
+            
+        }
     }
     &__arrowBtn{
         color: #4D5163;
+    }
+    &__list{    
+               
+        
     }
 }
