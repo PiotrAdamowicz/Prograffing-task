@@ -1,3 +1,28 @@
 .faq{
     background-color: #fff;
+    margin: 0 2rem;
+    min-width: 90%;
+    border-radius: 2rem;
+    padding: 10vw;
+    &__container{
+        width: 60%;
+        margin: 0 auto;
+    }
+    &__sectionName{
+        color: #0666F6;
+        text-transform: uppercase;        
+    }
+    &__text1{
+        color: rgba(77, 81, 99,.5);
+    }
+    &__item{}
+    &__question{
+        display: flex;
+    }
+    &__itemText{
+        color: #4D5163;
+    }
+    &__arrowBtn{
+        color: #4D5163;
+    }
 }
