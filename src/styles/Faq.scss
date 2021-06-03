@@ -5,35 +5,83 @@
     border-radius: 2rem;
     padding: 10vw;
     &__container{
-        width: 60%;
+        width: 70%;
         margin: 0 auto;
     }
     &__sectionName{
         color: #0666F6;
-        text-transform: uppercase;        
+        text-transform: uppercase;   
+        margin-bottom: 1.5rem;     
+    }
+    &__title{
+        margin-bottom: 1rem;
     }
     &__text1{
         color: rgba(77, 81, 99,.5);
+       margin: 0 5rem 3.7rem;
     }
-    &__item{}
+    &__item{
+        position: relative;
+        overflow: hidden;        
+        
+    }
     &__question{
         display: flex;
     }
-    &__itemText{
-        color: #4D5163;
-        visibility: hidden;  
-        height: 0;
+    &__answer{
+        height:2rem;
+        transition: height ease-out .2s;
         &--active{
+            height: 13.5rem;
+        }
+    }
+    &__arrow{
+        transition: transform ease-out .3s;
+        &--active{
+            transform: rotateX(-180deg);
+        }
+    }
+    &__itemText{
+        text-align: left;
+        position: absolute;
+        left: 0%;
+        top:-60%;        
+        color: #4D5163;
+        padding: 1.25rem 2rem 2rem;
+        visibility: hidden;
+        transition: top .3s ease-in-out .2s;
+        &--active{
+            left:0;
+            top:20%;            
             visibility: visible;
-            height: 100%;
             
         }
     }
     &__arrowBtn{
         color: #4D5163;
     }
-    &__list{    
-               
-        
+    &__slideshow{
+        display: flex;
+        justify-content: space-between;
+        overflow-x: hidden;
+        &Container{
+            position: relative;
+        }
+    }
+    &__slide{
+        // width: 20%;
+        max-width: 191px;
+        max-height: 54px;
+    }
+    &__slideLeft{
+        position: absolute;
+        top: 50%;
+        left:-6%;
+        transform: rotate(180deg);
+    }
+    &__slideRight{
+        position: absolute;
+        top:50%;
+        right:-6%;
     }
 }

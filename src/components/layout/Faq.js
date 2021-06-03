@@ -16,8 +16,8 @@ export default function Faq() {
           link.
         </p>
         <List />
-        <Slideshow />
       </div>
+      <Slideshow block={"faq"} />
     </section>
   );
 }

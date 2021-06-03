@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/no-redundant-roles */
-import React, { useState } from "react";
-import arrow from "../../svg/questionArrow.svg";
+import React from "react";
+import DropdownItem from "./DropdownItem";
 
 export default function List(props) {
   const listData = [
@@ -23,43 +23,12 @@ export default function List(props) {
       active: false,
     },
   ];
-  const [data, setData] = useState(listData);
-  const [isOpen, setIsOpen] = useState(false);
-
-  const clickHandler = (event) => {
-    data.forEach((item, i) => {
-      if (i == event.target.id) {
-        const res = [...listData];
-        res[i].active = !isOpen;
-        setIsOpen(!isOpen);
-        console.log(res);
-        // setData(res);
-      }
-    });
-  };
+  //TODO: styling of p.itemText
 
   return (
     <ul role="list" className="faq__list">
-      {data.map((item) => (
-        <li id={item.id} key={item.id} className="faq__item">
-          <div className="faq__question">
-            <h4 className="faq__itemTitle">{item.label}</h4>
-            <button
-              id={item.id}
-              onClick={clickHandler}
-              className="faq__arrowBtn"
-            >
-              <img id={item.id} src={arrow} alt="" />
-            </button>
-          </div>
-          <p
-            className={`faq__itemText ${
-              isOpen ? "faq__itemText--active" : null
-            }`}
-          >
-            {item.text}
-          </p>
-        </li>
+      {listData.map((item) => (
+        <DropdownItem key={item.id} item={item} />
       ))}
     </ul>
   );
