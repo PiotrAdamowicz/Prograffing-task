@@ -3,13 +3,13 @@ import React, { useState } from "react";
 import Link from "../utils/Link";
 import TraLogo from "../utils/TraLogo";
 
-const links = ["About", "Service", "Pricing", "Blog", "Contact"];
+const links = ["About", "Service", "Pricing", "Blog"];
 
 export default function Nav() {
   const [isActive, setIsActive] = useState(false);
   const menuContent = (
     <ul
-      className={`nav__items nav__items${isActive ? "--active" : ""}`}
+      className={`nav__items ${isActive ? "nav__items--active" : ""}`}
       role="list"
     >
       {links.map((link) => (
@@ -27,10 +27,12 @@ export default function Nav() {
   };
 
   return (
-    <nav className={`nav nav${isActive ? "--active" : null}`}>
+    <nav className={`nav ${isActive ? "nav--active" : ""}`}>
       <TraLogo toggleMenu={onClick} block="nav" />
-      {/* {isActive ? menuContent : null} */}
       {menuContent}
+      <Link href="#contact">
+        <button className="nav__contactBtn">Contact</button>
+      </Link>
     </nav>
   );
 }

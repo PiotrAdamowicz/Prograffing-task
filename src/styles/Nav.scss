@@ -1,7 +1,27 @@
 @import "./partials//variables";
 
 .nav{
-    
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 3rem 0;
+    &__logo{
+        &Btn{
+            height: 2rem;
+        }
+        &Icon{
+            height: 100%;
+        }
+    }
+    &__items{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__contactBtn{
+        border:solid 1px white;
+        border-radius: .75rem;
+        padding: .2rem 2rem;
+    }
     @media (max-width: $bp-mobile){
         position: fixed;
         left:0;

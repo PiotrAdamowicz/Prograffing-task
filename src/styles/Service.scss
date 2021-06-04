@@ -21,32 +21,45 @@
         max-width: calc(100%/2);
     }
     &__workerImg{
-        margin: 2rem 1rem 0;       
-        height: 90%;
-        width: 90%;
+        position: absolute;
+        
+        // margin: 2rem 1rem 0;       
+        // height: 90%;
+        // width: 90%;
         max-height: 232px;
         max-width: 224px;
+        bottom: 0%;
+        left:50%;
+        transform: translateX(-50%);
+    }
+    @media (max-width: 1315px){
+        &__workerImg{
+            bottom:0;
+            left:50%;
+            margin: 2rem 0 0;
+            transform: translateX(-50%);
+        }
     }
     &__handParcelIcon{
         top:12%;
         left:12%;
-        width: 35%;
+        width: 22%;
     }
     &__truckImg{
-        width: 30%;
+        width: 50%;
         right:-4%;
         max-width: 248px;
         max-height: 251px;
         top:-8%;
     }
     &__harborImg{
-        width:30%;
+        width:40%;
         max-width: 200px;
         bottom:8%;
         right: 5%;
     }
     &__planeImg{
-        width:30%;
+        width:40%;
         max-width: 200px;
         bottom: 12%;
         left:2%;
