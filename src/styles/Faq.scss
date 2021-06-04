@@ -61,9 +61,9 @@
         color: #4D5163;
     }
     &__slideshow{
-        // display: flex;
-        // justify-content: space-between;
-        // overflow-x: hidden;
+        display: flex;
+        justify-content: space-between;
+        overflow-x: hidden;
         &Container{
             position: relative;
         }
