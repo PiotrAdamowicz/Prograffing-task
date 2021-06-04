@@ -16,29 +16,37 @@
     &__workerContainer{
         background-color: #ED7171;
         border-radius: 2rem;
+        width: 50%;
+        height: 50%;
         max-width: calc(100%/2);
     }
     &__workerImg{
-        margin: 2rem 1rem 0;
-        height: 232px;
-        width: 224px;
+        margin: 2rem 1rem 0;       
+        height: 90%;
+        width: 90%;
+        max-height: 232px;
+        max-width: 224px;
     }
     &__handParcelIcon{
         top:12%;
         left:12%;
+        width: 35%;
     }
     &__truckImg{
+        width: 30%;
+        right:-4%;
         max-width: 248px;
         max-height: 251px;
-        right:-4%;
         top:-8%;
     }
     &__harborImg{
+        width:30%;
         max-width: 200px;
         bottom:8%;
         right: 5%;
     }
     &__planeImg{
+        width:30%;
         max-width: 200px;
         bottom: 12%;
         left:2%;
@@ -46,6 +54,7 @@
     &__abstractIcon{
         left: -10%;
         top:-10%;
+        width: 50%;
 
     }
 

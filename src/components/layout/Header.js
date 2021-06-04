@@ -2,6 +2,7 @@ import React from "react";
 
 import TruckImage from "../utils/ImgCompositionA";
 import ArticleA from "../utils/ArticleA";
+import Link from "../utils/Link";
 
 const data = {
   block: "header",
@@ -16,7 +17,9 @@ export default function Header() {
   return (
     <section id="header" className="header">
       <ArticleA data={data}>
-        <button className="header__getStartedBtn">Get Started</button>
+        <Link href="#service__getStartedCard">
+          <button className="header__getStartedBtn">Get Started</button>
+        </Link>
       </ArticleA>
       <TruckImage block="header" />
     </section>

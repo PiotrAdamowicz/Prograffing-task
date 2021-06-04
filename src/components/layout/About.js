@@ -38,7 +38,9 @@ export default function About() {
       <article className="about__shipArticle">
         <ShipImage block="about" />
         <ArticleB data={data}>
-          <button className="about__getStartedBtn">Get Started</button>
+          <Link href="#service__getStartedCard">
+            <button className="about__getStartedBtn">Get Started</button>
+          </Link>
         </ArticleB>
       </article>
       <h3 className="statistics__title">

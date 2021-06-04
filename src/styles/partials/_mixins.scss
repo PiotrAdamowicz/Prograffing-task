@@ -16,6 +16,7 @@
         border-radius: $btn-radius;
         padding: $button 1.7rem;
         z-index: 10;
+        font-family: 'Black Ops One';
     }
 }
 @mixin getStarted ($img){
@@ -34,7 +35,7 @@
     &__title{
         color: white;
     }
-    &__getStartedBtn{
+    &__getStartedBtnRed{
         height: 20%;
         background-color: #ED7171;
         border-radius: .75rem;               
